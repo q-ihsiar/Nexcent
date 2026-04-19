@@ -1,0 +1,116 @@
+.btn-success:hover {
+    background-color: #388E3C;
+}
+
+.hero-section {
+    padding: 100px 0;
+}
+
+h1 {
+    line-height: 1.2;
+}
+
+.nav-logo {
+    width: 35px;
+    height: 35px;
+    object-fit: contain; /* This prevents stretching by scaling the image to fit */
+}
+
+
+/* Target the indicator buttons correctly */
+#heroCarousel .carousel-indicators button {
+    background-color: #388E3C; /* Nexcent Green */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; /* Forces them to be circles */
+}
+
+/* Style for the active dot */
+#heroCarousel .carousel-indicators .active {
+    opacity: 1;
+    
+}
+
+/* Logo Styling */
+.client-logo {
+    max-width: 70px;
+    height: auto;
+    filter: grayscale(100%); /* Optional: makes them look uniform */
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.client-logo:hover {
+    opacity: 1;
+}
+
+/* Feature Card Styling */
+.feature-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(171, 190, 209, 0.2);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.feature-card:hover {
+    box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
+    transform: translateY(-5px);
+}
+
+/* The unique green background behind the icons */
+.icon-container {
+    background-color: #E8F5E9; /* Nexcent very light green */
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px 5px 18px 5px; /* That specific Nexcent corner shape */
+}
+
+.icon-container img {
+    width: 40px;
+    height: auto;
+}
+
+h3 {
+    color: #4D4D4D;
+    line-height: 1.2;
+}
+
+/* Floating Card Logic */
+.blog-card {
+    position: relative;
+    margin-bottom: 80px; /* Space for the floating text box */
+}
+
+.blog-content {
+    width: 85%;
+    margin: -60px auto 0; /* Pulls the text box UP over the image */
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-content {
+    transform: translateY(-10px);
+}
+
+/* Footer Styling */
+.footer .bi {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer .bi:hover {
+    color: #4CAF4F;
+}
+
+.footer .form-control {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.footer .form-control::placeholder {
+    color: #D9DBE1;
+}
